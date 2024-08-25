@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #303030;  
+}
+
+/*se definen estilos por defecto para la vista Mobile*/
+ul {
+  background-color: royalblue;
+  color: white;
+  margin: 0;
+  padding: 10px;
+  list-style: none;/*elimina los estilos de lista*/
+  display: flex;
+  flex-direction: column;
+}
+ul li {
+  padding: 5px;
+}
+
+/*se aplican estas propiedades CSS, cuando el ancho de pantalla es Mayor o Igual a 576px*/
+@media (width >= 576px) {
+  ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+/*se aplican estas propiedades CSS, cuando el ancho de pantalla es Mayor o Igual a 768px*/
+@media (width >= 768px){
+  ul {
+    justify-content: end;
+  }
+}
