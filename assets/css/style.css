@@ -19,7 +19,7 @@ ul li {
 }
 
 /*se aplican estas propiedades CSS, cuando el ancho de pantalla es Mayor o Igual a 576px*/
-@media (width >= 576px) {
+@media (min-width: 576px) {/*sintaxis Nivel4: (width >= 576px)*/
   ul {
     flex-direction: row;
     justify-content: space-around;
@@ -27,7 +27,7 @@ ul li {
 }
 
 /*se aplican estas propiedades CSS, cuando el ancho de pantalla es Mayor o Igual a 768px*/
-@media (width >= 768px){
+@media (min-width: 768px){/*sintaxis Nivel4*: (width >= 768px)*/
   ul {
     justify-content: end;
   }
